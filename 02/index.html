@@ -33,11 +33,107 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbar">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a href="#" class="nav-link active text-uppercase">home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#About" class="nav-link text-uppercase">about us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Team" class="nav-link text-uppercase">team</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Services" class="nav-link text-uppercase">services</a>
+            </li>
+            <li class="nav-item">
+              <a href="#Contact" class="nav-link text-uppercase">contact</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- HEADER -->
-    <!-- HEADER > GET STARTED CONETNT MODEL -->
+    <header class="vh-100 bg-image">
+      <div class="container mt-5 pt-5 h-25">
+        <h4 class="text-light font-monospace text-shadow animate-text-right">
+          Financial Planning For Life
+        </h4>
+        <h1 class="display-1 text-white text-shadow animate-text-right-3s">
+          Lorem ipsum dolor sit amet.
+        </h1>
+        <button
+          class="btn btn-lg btn-info shadow mt-3 animate-text-right-5s"
+          data-bs-toggle="modal"
+          data-bs-target="#offer"
+        >
+          Get offer
+        </button>
+      </div>
+      <!-- HEADER > GET STARTED CONETNT MODEL -->
+      <div
+        class="modal fade"
+        id="offer"
+        tabindex="-1"
+        aria-labelledby="offerlabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="offer">New message</h5>
+              <button
+                class="btn-close"
+                type="button"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div class="modal-body">
+              <form action="#">
+                <div class="mb-3">
+                  <label class="col-form-label">Recipient:</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">First name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your first name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Last name:</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter your lastname"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label class="col-form-label">Recipient:</label>
+                  <textarea type="text" class="form-control"></textarea>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer">
+              <button
+                class="btn btn-danger"
+                type="button"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button class="btn btn-primary" type="submit">Send</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
     <!-- ABOUT-->
     <!-- ABOUT > ABOUT MODEL CONTENT -->
     <!-- TEAM -->
