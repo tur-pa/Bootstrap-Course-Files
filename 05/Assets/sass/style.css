@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:wght@400;500;600;700&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css");
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.text-purple-dark {
+  color: #2b3445;
+}
+.text-carrot-red {
+  color: #e84748;
+}
+
+.bg-purple-dark {
+  background-color: #2b3445;
+}
+.bg-purple-dark-20 {
+  background-color: #222a37;
+}
+.bg-carrot-red {
+  background-color: #e84748;
+}
+
+.hover, .hover-link:hover {
+  transition: 0.3s ease;
+  color: white !important;
+}
+.hover-link:hover {
+  text-decoration: underline !important;
+}/*# sourceMappingURL=style.css.map */

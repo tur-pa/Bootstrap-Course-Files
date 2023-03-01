@@ -1,0 +1,33 @@
+// Text
+
+.text {
+  &-purple-dark {
+    color: $purple-dark;
+  }
+  &-carrot-red {
+    color: $carrot-red;
+  }
+}
+
+// Bg
+
+.bg {
+  &-purple-dark {
+    background-color: $purple-dark;
+  }
+  &-purple-dark-20 {
+    background-color: #222a37;
+  }
+  &-carrot-red {
+    background-color: $carrot-red;
+  }
+}
+
+.hover {
+  transition: 0.3s ease;
+  color: lighten($color: #fff, $amount: 50%) !important;
+  &-link:hover {
+    @extend .hover;
+    text-decoration: underline !important;
+  }
+}
