@@ -1,0 +1,23 @@
+#Reviews {
+  .review-card {
+    @extend .card;
+    width: 20rem;
+    background-color: $light;
+    border: none;
+    .card {
+      &-body {
+        background-color: $white;
+        @extend .shadow;
+        @extend .rounded-2;
+      }
+      &-title {
+        i {
+          @extend .text-review-color;
+        }
+      }
+    }
+    img {
+      width: 100px;
+    }
+  }
+}

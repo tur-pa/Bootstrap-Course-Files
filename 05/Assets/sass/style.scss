@@ -1,3 +1,12 @@
+// BS partions
+@import "../../bsSource/node_modules/bootstrap/scss/bootstrap.scss";
+
 @import "./config";
 @import "./variables";
+@import "./mixin.scss";
 @import "./utilities";
+
+// Sections
+@import "./sections/catgories_section";
+@import "./sections/products_section";
+@import "./sections/review_section";

@@ -7,6 +7,43 @@
   &-carrot-red {
     color: $carrot-red;
   }
+  &-review-color {
+    color: $review-cold;
+  }
+
+  &-html {
+    color: $html-color;
+  }
+  &-css {
+    color: $css-color;
+  }
+  &-js {
+    color: $js-color;
+  }
+  &-sass {
+    color: $sass-color;
+  }
+  &-bs {
+    color: $bs-color;
+  }
+  &-angular {
+    color: $angular-color;
+  }
+  &-vue {
+    color: $vue-color;
+  }
+  &-react {
+    color: $react-color;
+  }
+  &-npm {
+    color: $npm-color;
+  }
+  &-db {
+    color: $mongoDB-color;
+  }
+  &-node {
+    color: $nodeJS-color;
+  }
 }
 
 // Bg
@@ -21,6 +58,9 @@
   &-carrot-red {
     background-color: $carrot-red;
   }
+  &-dark-transparent {
+    background-color: rgba($color: #000000, $alpha: 0.1);
+  }
 }
 
 .hover {
@@ -29,5 +69,50 @@
   &-link:hover {
     @extend .hover;
     text-decoration: underline !important;
+  }
+}
+
+// Animation
+
+@keyframes animateFadeInLeft {
+  0% {
+    transform: translateX(-500px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(initial);
+    opacity: 1;
+  }
+}
+
+.fade-in-left {
+  animation: animateFadeInLeft 2s ease;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  background: $light;
+  border-radius: 50%;
+}
+
+.btn {
+  &-purple {
+    @extend .btn;
+    background-color: $purple-dark;
+    color: $light;
+    &:hover {
+      @extend .btn-danger;
+      @extend .shadow;
+    }
+  }
+
+  &-social {
+    @extend .btn;
+    @extend .bg-purple-dark-20;
+    &:hover {
+      @extend .btn-outline-light;
+      color: $carrot-red !important;
+    }
   }
 }
